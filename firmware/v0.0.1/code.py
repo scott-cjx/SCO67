@@ -10,7 +10,7 @@ import time
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 
-LOOP_INTERVAL = 0.5 
+LOOP_INTERVAL = 0.5
 PHY_DEF = SCO67_DEF.SCO67_PHY_DEF
 
 keyboard = Keyboard(usb_hid.devices)
@@ -40,4 +40,4 @@ while 1:
     if kbd_status.get_if_update():
         kbd_action.act_on_report()
 
-    time.sleep(LOOP_INTERVAL)
+    # time.sleep(LOOP_INTERVAL)

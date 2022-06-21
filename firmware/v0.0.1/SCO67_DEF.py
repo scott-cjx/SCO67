@@ -24,5 +24,7 @@ SCO67_PHY_DEF = {
         "R2": board.GP21,
         "R3": board.GP20,
         "R4": board.GP19
-    }
+    },
+    "button": board.BUTTON,
+    "led": board.LED
 }
